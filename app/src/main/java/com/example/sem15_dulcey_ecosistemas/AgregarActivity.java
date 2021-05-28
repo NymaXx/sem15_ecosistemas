@@ -9,6 +9,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +24,7 @@ public class AgregarActivity extends AppCompatActivity {
     private Button botonAgregarContacto;
     private ContactosAdaptador adapter;
     private String userId;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,17 +38,10 @@ public class AgregarActivity extends AppCompatActivity {
         adapter = new ContactosAdaptador();
 
         db = FirebaseDatabase.getInstance();
-
+        auth = FirebaseAuth.getInstance();
 
         loadDatabase();
-        /*botonAgregarContacto.setOnClickListener(
-                (v)->{
 
-                    Intent i = new Intent(this, MainActivity.class);
-                    startActivity(i);
-
-                }
-        );*/
     }
 
 

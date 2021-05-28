@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/NombreUsuario"
+            android:id="@+id/nombreUsuario"
             android:layout_width="147dp"
             android:layout_height="38dp"
             android:layout_marginTop="16dp"
@@ -32,35 +32,33 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/botonAgregar"
+            android:id="@+id/addContactoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Añadir Contactos"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/NombreUsuario" />
+            app:layout_constraintTop_toBottomOf="@+id/nombreUsuario" />
 
         <ListView
-            android:id="@+id/listaContacto"
+            android:id="@+id/listaContactos"
             android:layout_width="338dp"
             android:layout_height="276dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/botonAgregar" />
+            app:layout_constraintTop_toBottomOf="@+id/addContactoBtn" />
 
-        <TextView
-            android:id="@+id/noRegistradoMain"
-            android:layout_width="240dp"
-            android:layout_height="28dp"
-            android:text="No estoy registrado"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/listaContacto" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="671dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
