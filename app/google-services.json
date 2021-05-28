@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "716215311140",
+    "project_id": "sem15-ecosistemas",
+    "storage_bucket": "sem15-ecosistemas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716215311140:android:00e23548fa4790e10771b1",
+        "android_client_info": {
+          "package_name": "com.example.sem15_dulcey_ecosistemas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716215311140-vdr9c9osvo3f6619bgkeseulpqnnu6kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHw0pCDsyhblBVnoV42cOrzGKlC5iQ3b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716215311140-vdr9c9osvo3f6619bgkeseulpqnnu6kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
