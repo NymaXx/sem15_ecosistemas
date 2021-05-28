@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginBtn.setOnClickListener(this);
         toRegLink.setOnClickListener(this);
 
-
+        onStart();
 
     }
 
@@ -48,23 +48,25 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.loginBtn:
-                Intent in = new Intent(this, MainActivity.class);
-                startActivity(in);
-
-              /*  auth.signInWithEmailAndPassword(email, password)
+                auth.signInWithEmailAndPassword(logEmail.getText().toString(), logPassword.getText().toString())
                         .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    FirebaseUser user = auth.getCurrentUser();
-                                    updateUI(user);
-                                        Intent intent = new Intent(this, MainActivity.class);
-                                        startActivity(intent);
+                                    Toast.makeText(LoginActivity.this, "Ingresaste con exito"
+                                            , Toast.LENGTH_SHORT).show();
                                 } else {
-                                    updateUI(null);
+                                    // If sign in fails, display a message to the user;
+                                    Toast.makeText(LoginActivity.this, "No fue posible ingresar"
+                                            , Toast.LENGTH_SHORT).show();
                                 }
                             }
-                        });*/
+                        });
+
+
+                Intent in = new Intent(this, MainActivity.class);
+                startActivity(in);
+
 
 
                 break;
